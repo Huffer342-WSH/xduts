@@ -5232,7 +5232,7 @@ literate        = {\$}{{\textcolor{purple3}{\$}}}{1}
         \cs_if_exist:NT \thealgorithm
           {
             \floatplacement { algorithm } { tbp }
-            \cs_set:Npn \thealgorithm { \thechapter . \arabic { algorithm } }
+            \cs_set:Npn \thealgorithm { \thechapter - \arabic { algorithm } }
 %    \end{macrocode}
 % \end{macro}
 % \begin{macro}{\renewenvironment}
@@ -5270,7 +5270,7 @@ literate        = {\$}{{\textcolor{purple3}{\$}}}{1}
       {
         \cs_if_exist:NT \thealgocf
           {
-            \cs_set:Npn \thealgocf { \thechapter . \arabic { algocf } }
+            \cs_set:Npn \thealgocf { \thechapter - \arabic { algocf } }
 %    \end{macrocode}
 % \end{macro}
 % \begin{macro}{\renewenvironment}
