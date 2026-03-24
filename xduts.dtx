@@ -6946,7 +6946,7 @@ literate        = {\$}{{\textcolor{purple3}{\$}}}{1}
 %    \begin{macrocode}
     \@@_n_chapter_head_toc:nn
       { 摘要 }
-      { \@@_sf_family: \mdseries 摘 { \quad } 要 }
+      { \@@_sf_family: \mdseries 摘要 }
     \@@_lang_switch:nn { } { \@@_add_zh_toc:nn { chapter } { 摘要 } }
     \group_begin:
       \dim_set:Nn \parindent { 2 \ccwd }
@@ -7453,8 +7453,8 @@ literate        = {\$}{{\textcolor{purple3}{\$}}}{1}
       {
         \setcounter { tocdepth } { 2 }
         \@@_n_chapter_head:nn
-          { \@@_lang_switch:nn { 目录            } { Contents } }
-          { \@@_lang_switch:nn { 目 { \quad } 录 } { Contents } }
+          { \@@_lang_switch:nn { 目录 } { Contents } }
+          { \@@_lang_switch:nn { 目录 } { Contents } }
         \@starttoc { toc }
         \cleardoublepage
 %    \end{macrocode}
@@ -7729,8 +7729,8 @@ literate        = {\$}{{\textcolor{purple3}{\$}}}{1}
     \bool_if:NF \l_@@_rm_ack_bool
       {
         \@@_n_chapter_head_toc:nn
-          { \@@_lang_switch:nn { 致谢            } { Acknowledgements } }
-          { \@@_lang_switch:nn { 致 { \quad } 谢 } { Acknowledgements } }
+          { \@@_lang_switch:nn { 致谢 } { Acknowledgements } }
+          { \@@_lang_switch:nn { 致谢 } { Acknowledgements } }
         \@@_lang_switch:nn { } { \@@_add_zh_toc:nn { chapter } { 致谢 } }
         \group_begin:
           \dim_set:Nn \parindent { 2 \ccwd }
